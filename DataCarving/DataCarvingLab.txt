@@ -1,0 +1,44 @@
+FILE 1:
+	name: social-media-examples.pdf
+	offsets:
+		begin - 0x42D000
+		end - 0x43DB2C
+	MD5: 9ecdba01deb179f49fd2fcc5f119a599
+	size: 68398 bytes
+	type: PDF document
+
+FILE 2:
+	name: CU-logo.jpg
+	offsets:
+		begin - 0x297B000
+		end - 0x297D7CD
+	MD5: b7e1fd222f355aeed11d3432c76fa2f7
+	size: 10189 bytes
+	type: JPEG image
+	
+FILE 3:
+	name: cu-web-banner_white-text_clear-bg.png
+	offsets:
+		begin - 0x28000
+		end - 0x2A44F
+	MD5: 29ce17a51d2bc8f56ff76e0aaf58c61e
+	size: 9295 bytes
+	type: PNG image
+	
+FILE 4:
+	name: colorado.png
+	offsets:
+		begin - 0x28D8000
+		end - 0x297A8CE
+	MD5: 14e82f5a7f8c8c06887d663cc3cc4945
+	size: 665805 bytes
+	type: PNG image
+	
+FILE 5:
+	name: cu-web-banner_black.jpg
+	offsets:
+		begin - 0x23000
+		end - 0x27735
+	MD5: 49c35f95eb60e987cb38e993b0deeeb3
+	size: 18229 bytes
+	type: JPEG image

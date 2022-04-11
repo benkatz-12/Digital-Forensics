@@ -1,0 +1,5 @@
+Data Carving
+	fls -l [image] - to see files and directories in metadata
+	istat [image] [inode] - to see specifc file metadata
+	icat -r [image] [inode] | less - to see information in inode
+	then match info to hexedit of image

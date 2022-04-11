@@ -1,0 +1,36 @@
+dd1:
+	Base File System
+	
+dd2:
+	file1.txt - created
+		File, Archive
+		1000 bytes
+		all 1000 bytes are "1"
+	
+dd3:
+	file2.txt - created
+		File, Archive
+		2000 bytes
+		all 2000 bytes are "2"
+	
+dd4:
+	file3.txt - created
+		File, Archive
+		3000 bytes
+		all 3000 bytes are "3"
+	
+dd5:
+	file1.txt - moved to trash (deleted)
+	.Trash-0 - directory created
+		file1.txt trash info created in /.Trash-0/info
+			file1.txt.trashinfo
+				file1.txt.trashinfo.P90PWZ
+		file1.txt moved to ./Trash-0/files
+			file1.txt exits at different inode
+dd6:
+	file4.txt - created
+		overwrites original file1.txt inode
+		File, Archive
+		4000 bytes
+		all 4000 bytes are "4"
+	

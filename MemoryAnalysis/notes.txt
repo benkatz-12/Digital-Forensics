@@ -1,0 +1,30 @@
+String found in notepad.exe.7d292060.0x0000000000420000-0x000000000051ffff.dmp:
+	This is a secret file
+	There is another file residing in Windows 10 volatile memory
+	The file may hold answers to the midterm exam
+	You will have to find that file to for instructions to compete this lab
+	Remember you will need to include a build number when using Volatility with a Windows 10 memory dump
+
+
+String found in notepad.exe.5040a780.0x00000253de990000-0x00000253dea8ffff.dmp:
+	I am very glad you found this file
+	I hope you not dissapointed when you read this and realize there are no answers for the midterm exam
+	If you focus on studying everything in the slides you will do fine
+	To get credit for this lab please submit your answer for the following question: 
+	What is your favorite prime number and why?
+	
+	
+PROCESS:
+	Get profile of memdump:
+		volatility –f image.raw --profile=xxx imageinfo
+		volatility –f image.raw --profile=xxx kdbgscan
+	See notepad process:
+		volatility –f Win7x64.vmem --profile=Win7SP1x64 pslist
+	Create VAD tree:
+		volatility –f Win7x64.vmem --profile=Win7SP1x64 vadtree --output=dot --output-file=graph.dot –p 2764
+		LOOK at VAD tree:
+			xdot graph.dot
+	Dump VAD files:
+		volatility -f Win7x64.vmem --profile=Win7SP1x64 vaddump -p 2764 -D vads
+	Search VAD files:
+		hexedit OR xxd -a <vad name> | less

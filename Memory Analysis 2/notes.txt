@@ -1,0 +1,7 @@
+Directions:
+	The purpose of this lab is to expose students to Windows 10 browser reconstruction via volatile memory analysis.
+	
+Process:
+	investigate image:
+		$vol.py -f Win10x64Snap2.vmem --profile=Win10x64 imageinfo
+		$vol.py -f Win10x64Snap2.vmem --profile=Win10x64_14393 kdbgscan
